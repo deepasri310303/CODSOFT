@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    color: #595554;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    background: #F4F0F1;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+}
+
+/* Header Styling:Start */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    height: fit-content;
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 2px solid rgba(89, 85, 84, 0.1);
+    font-size: 18px;
+
+    background: #F4F0F1;
+}
+
+.header .name{
+    padding-left: 5px;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header a{
+    padding: 10px 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.header a:hover{
+    transition: all 0.5s ease;
+    background: rgba(89, 85, 84, 0.1);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
+    max-height: max-content;
+    width: 100%;   
+}
+
+.profile-image{
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgba(141, 110, 99, 1);
+    border-radius: 50%;
+
+    background: url("/Img/image.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hello{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #8D6E63;
+}
+
+.container h1{
+    padding-top: 10px;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.description{
+    margin: 10px 50px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.social a{
+    margin: 0 5px;
+}
+
+ion-icon{
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.color{
+    color: #8D6E63;
+}
+
+ion-icon:hover{
+    transition: all 0.5s ease;
+    background: rgba(89, 85, 84, 0.1) !important;
+}
+
+.header .menu{
+    display: none;
+}
+
+.menu_list {
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    right: 10px;
+    height: 200px;
+    border-radius: 24px;
+    background: rgba(89, 85, 84, 0.1);
+    padding: 20px 10px;
+    transition: 0.5s all ease;
+}
+/* Header Styling:End */
+
+/* About Styling:Start */
+.container .heading{
+    margin-bottom: 50px;
+    font-size: 110px;
+    opacity: 0.1;
+}
+
+.about-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+
+    border: 2px solid rgba(89, 85, 84, 0.1);
+    border-radius: 24px;
+}
+
+.left{
+    flex-basis: 50%;
+    margin: 10px 0;
+}
+
+.left h2{
+    margin-top: 5px;
+    max-width: 280px;
+    line-height: 45px;
+    font-size: 32px;
+}
+
+.left h3{
+    color: #8D6E63;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #F4F0F1;
+    border: none;
+    border-radius: 12px;
+
+    background: #8D6E63;
+}
+
+button:hover{
+    transition: all 0.5s ease;
+    background: #595554;
+}
+
+button ion-icon{
+    font-size: 18px;
+    color: #F4F0F1;
+}
+
+.right{
+    flex-basis: 50%;
+    margin-left: 25px;
+}
+
+.right p{
+    margin: 15px 0;
+    max-width: 400px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+/* About Styling:End */
+
+/* Services Styling:Start */
+.services-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.services-box div{
+    min-height: 250px;
+    max-height: max-content;
+    margin: 0 10px;
+    padding: 30px 20px;
+    text-align: center;
+    border: 2px solid rgba(89, 85, 84, 0.1);
+    border-radius: 24px;
+}
+
+.services-box ion-icon{
+    margin: 5px auto;
+    padding: 8px;
+    border: 2px dashed #595554;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.services-box h3{
+    margin-bottom: 10px;
+    color: #8D6E63;
+}
+
+.services-box p{
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 300px;
+    font-size: 18px;
+    /* font-weight: 600; */
+    text-align: center;
+}
+/* Services Styling:End */
+
+/* Projects Styling:Start */
+#projects{
+    padding: 100px 0;
+}
+
+.projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 1rem;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.projects-box .project{
+    height: 220px;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid rgba(89, 85, 84, 0.1);
+    border-radius: 24px;
+
+    background: rgba(89, 85, 84, 0.1);
+}
+
+.projects-box .project:hover{
+    background: rgba(89, 85, 84, 0.2);
+}
+
+.projects-box .project img{
+    width: 260px;
+    border-radius: 12px;
+    border: 2px solid rgba(89, 85, 84, 0.1);
+}
+
+.projects-box .project p{
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+/* Projects Styling:End */
+
+/* Contact Styling:Start */
+#contact form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+input{
+    height: 50px;
+}
+
+textarea{
+    min-height: 200px;
+    resize: none;
+}
+
+input, textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+
+    background: rgba(89, 85, 84, 0.1);
+}
+
+#contact button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/* Contact Styling:End */
+
+/* Footer Styling:Start */
+.footer{
+    border-top: 2px solid rgba(89, 85, 84, 0.1);
+    padding: 50px 0;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0 auto
+}
+
+.footer a{
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.footer a:hover{
+    transition: all 0.5s ease;
+    background: rgba(89, 85, 84, 0.1);
+}
+/* Footer Styling:End */
+
+/* Responsiveness:Start */
+@media screen and (width < 780px) {
+    .header #navbar{
+        display: none !important;
+    }
+    .header .menu{
+        display: block;
+    }
+    .about-box{
+        flex-direction: column;
+    }
+    .about-box .right{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #services{
+        padding-top: 100px;
+    }
+    .services-box{
+        flex-direction: column;
+    }
+    .services-box .box2{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (width < 550px) {
+    .heading{
+        font-size: 90px !important;
+    }
+    .about-box{
+        width: 350px;
+    }
+}
+/* Responsiveness:End */
